@@ -5,3 +5,4 @@ C:\Users\YURIM_Public_PC\Desktop\Chatting\Server\Server\obj\x86\Debug\Server.Ser
 C:\Users\YURIM_Public_PC\Desktop\Chatting\Server\Server\obj\x86\Debug\Server.csproj.GenerateResource.Cache
 C:\Users\YURIM_Public_PC\Desktop\Chatting\Server\Server\obj\x86\Debug\Server.exe
 C:\Users\YURIM_Public_PC\Desktop\Chatting\Server\Server\obj\x86\Debug\Server.pdb
+C:\Users\YURIM_Public_PC\Desktop\Chatting\Server\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache

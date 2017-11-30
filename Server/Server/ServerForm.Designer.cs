@@ -85,7 +85,7 @@
             this.labelSend.Name = "labelSend";
             this.labelSend.Size = new System.Drawing.Size(94, 35);
             this.labelSend.TabIndex = 6;
-            this.labelSend.Text = "보낼 텍스트";
+            this.labelSend.Text = "입 력";
             this.labelSend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textSend
@@ -126,6 +126,7 @@
             this.textStatus.Multiline = true;
             this.textStatus.Name = "textStatus";
             this.textStatus.ReadOnly = true;
+            this.textStatus.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textStatus.Size = new System.Drawing.Size(554, 341);
             this.textStatus.TabIndex = 9;
             // 

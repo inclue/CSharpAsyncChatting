@@ -45,23 +45,22 @@
             // 
             // tableLayoutPanel
             // 
-            this.tableLayoutPanel.ColumnCount = 5;
+            this.tableLayoutPanel.ColumnCount = 4;
             this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel.Controls.Add(this.textNickName, 0, 1);
             this.tableLayoutPanel.Controls.Add(this.labelNickName, 0, 1);
             this.tableLayoutPanel.Controls.Add(this.labelSend, 0, 3);
             this.tableLayoutPanel.Controls.Add(this.textSend, 1, 3);
-            this.tableLayoutPanel.Controls.Add(this.buttonSend, 4, 3);
             this.tableLayoutPanel.Controls.Add(this.textStatus, 0, 2);
             this.tableLayoutPanel.Controls.Add(this.textAddress, 1, 0);
-            this.tableLayoutPanel.Controls.Add(this.buttonConnect, 4, 0);
             this.tableLayoutPanel.Controls.Add(this.labelAddress, 0, 0);
-            this.tableLayoutPanel.Controls.Add(this.labelPort, 2, 1);
-            this.tableLayoutPanel.Controls.Add(this.textPort, 3, 1);
+            this.tableLayoutPanel.Controls.Add(this.textNickName, 1, 1);
+            this.tableLayoutPanel.Controls.Add(this.textPort, 3, 0);
+            this.tableLayoutPanel.Controls.Add(this.labelPort, 2, 0);
+            this.tableLayoutPanel.Controls.Add(this.buttonConnect, 2, 1);
+            this.tableLayoutPanel.Controls.Add(this.buttonSend, 3, 3);
             this.tableLayoutPanel.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel.Name = "tableLayoutPanel";
             this.tableLayoutPanel.RowCount = 4;
@@ -78,7 +77,7 @@
             this.textNickName.Font = new System.Drawing.Font("굴림", 12F);
             this.textNickName.Location = new System.Drawing.Point(103, 38);
             this.textNickName.Name = "textNickName";
-            this.textNickName.Size = new System.Drawing.Size(176, 26);
+            this.textNickName.Size = new System.Drawing.Size(246, 26);
             this.textNickName.TabIndex = 11;
             // 
             // labelNickName
@@ -98,25 +97,25 @@
             this.labelSend.Name = "labelSend";
             this.labelSend.Size = new System.Drawing.Size(94, 35);
             this.labelSend.TabIndex = 6;
-            this.labelSend.Text = "보낼 텍스트";
+            this.labelSend.Text = "입 력";
             this.labelSend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textSend
             // 
-            this.tableLayoutPanel.SetColumnSpan(this.textSend, 3);
+            this.tableLayoutPanel.SetColumnSpan(this.textSend, 2);
             this.textSend.Font = new System.Drawing.Font("굴림", 12F);
             this.textSend.Location = new System.Drawing.Point(103, 385);
             this.textSend.Name = "textSend";
-            this.textSend.Size = new System.Drawing.Size(354, 26);
+            this.textSend.Size = new System.Drawing.Size(346, 26);
             this.textSend.TabIndex = 7;
             this.textSend.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textSend_KeyDown);
             // 
             // buttonSend
             // 
             this.buttonSend.Font = new System.Drawing.Font("굴림", 12F);
-            this.buttonSend.Location = new System.Drawing.Point(463, 385);
+            this.buttonSend.Location = new System.Drawing.Point(455, 385);
             this.buttonSend.Name = "buttonSend";
-            this.buttonSend.Size = new System.Drawing.Size(94, 29);
+            this.buttonSend.Size = new System.Drawing.Size(102, 29);
             this.buttonSend.TabIndex = 8;
             this.buttonSend.Text = "보내기";
             this.buttonSend.UseVisualStyleBackColor = true;
@@ -124,30 +123,30 @@
             // 
             // textStatus
             // 
-            this.tableLayoutPanel.SetColumnSpan(this.textStatus, 5);
+            this.tableLayoutPanel.SetColumnSpan(this.textStatus, 4);
             this.textStatus.Location = new System.Drawing.Point(3, 73);
             this.textStatus.Multiline = true;
             this.textStatus.Name = "textStatus";
             this.textStatus.ReadOnly = true;
+            this.textStatus.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textStatus.Size = new System.Drawing.Size(554, 306);
             this.textStatus.TabIndex = 9;
             // 
             // textAddress
             // 
-            this.tableLayoutPanel.SetColumnSpan(this.textAddress, 3);
             this.textAddress.Font = new System.Drawing.Font("굴림", 12F);
             this.textAddress.Location = new System.Drawing.Point(103, 3);
             this.textAddress.Name = "textAddress";
-            this.textAddress.Size = new System.Drawing.Size(354, 26);
+            this.textAddress.Size = new System.Drawing.Size(246, 26);
             this.textAddress.TabIndex = 3;
             // 
             // buttonConnect
             // 
+            this.tableLayoutPanel.SetColumnSpan(this.buttonConnect, 2);
             this.buttonConnect.Font = new System.Drawing.Font("굴림", 12F);
-            this.buttonConnect.Location = new System.Drawing.Point(463, 3);
+            this.buttonConnect.Location = new System.Drawing.Point(355, 38);
             this.buttonConnect.Name = "buttonConnect";
-            this.tableLayoutPanel.SetRowSpan(this.buttonConnect, 2);
-            this.buttonConnect.Size = new System.Drawing.Size(94, 61);
+            this.buttonConnect.Size = new System.Drawing.Size(202, 29);
             this.buttonConnect.TabIndex = 0;
             this.buttonConnect.Text = "연결";
             this.buttonConnect.UseVisualStyleBackColor = true;
@@ -166,7 +165,7 @@
             // labelPort
             // 
             this.labelPort.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.labelPort.Location = new System.Drawing.Point(285, 35);
+            this.labelPort.Location = new System.Drawing.Point(355, 0);
             this.labelPort.Name = "labelPort";
             this.labelPort.Size = new System.Drawing.Size(94, 33);
             this.labelPort.TabIndex = 2;
@@ -176,9 +175,9 @@
             // textPort
             // 
             this.textPort.Font = new System.Drawing.Font("굴림", 12F);
-            this.textPort.Location = new System.Drawing.Point(385, 38);
+            this.textPort.Location = new System.Drawing.Point(455, 3);
             this.textPort.Name = "textPort";
-            this.textPort.Size = new System.Drawing.Size(72, 26);
+            this.textPort.Size = new System.Drawing.Size(102, 26);
             this.textPort.TabIndex = 4;
             this.textPort.Text = "8080";
             // 
