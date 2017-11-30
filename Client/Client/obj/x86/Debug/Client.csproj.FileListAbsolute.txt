@@ -1,0 +1,8 @@
+C:\Users\YURIM_Public_PC\Desktop\Chatting\Client\Client\bin\Debug\Client.exe
+C:\Users\YURIM_Public_PC\Desktop\Chatting\Client\Client\bin\Debug\Client.pdb
+C:\Users\YURIM_Public_PC\Desktop\Chatting\Client\Client\obj\x86\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\YURIM_Public_PC\Desktop\Chatting\Client\Client\obj\x86\Debug\Client.Properties.Resources.resources
+C:\Users\YURIM_Public_PC\Desktop\Chatting\Client\Client\obj\x86\Debug\Client.csproj.GenerateResource.Cache
+C:\Users\YURIM_Public_PC\Desktop\Chatting\Client\Client\obj\x86\Debug\Client.exe
+C:\Users\YURIM_Public_PC\Desktop\Chatting\Client\Client\obj\x86\Debug\Client.pdb
+C:\Users\YURIM_Public_PC\Desktop\Chatting\Client\Client\obj\x86\Debug\Client.ClientForm.resources
