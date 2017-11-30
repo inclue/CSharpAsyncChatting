@@ -1,2 +1,3 @@
 # CSharpChatting
-C# 채팅 프로그램
+ - Chatting Program make by C#
+ - Practice WinForm, Thread and Socket Programming
