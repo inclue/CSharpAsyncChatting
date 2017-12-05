@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.textNickName = new System.Windows.Forms.TextBox();
             this.labelNickName = new System.Windows.Forms.Label();
             this.labelSend = new System.Windows.Forms.Label();
             this.textSend = new System.Windows.Forms.TextBox();
-            this.buttonSend = new System.Windows.Forms.Button();
             this.textStatus = new System.Windows.Forms.TextBox();
             this.textAddress = new System.Windows.Forms.TextBox();
-            this.buttonConnect = new System.Windows.Forms.Button();
             this.labelAddress = new System.Windows.Forms.Label();
+            this.textNickName = new System.Windows.Forms.TextBox();
             this.labelPort = new System.Windows.Forms.Label();
+            this.buttonSend = new System.Windows.Forms.Button();
             this.textPort = new System.Windows.Forms.TextBox();
+            this.buttonConnect = new System.Windows.Forms.Button();
+            this.buttonDisconnect = new System.Windows.Forms.Button();
             this.tableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,10 +58,11 @@
             this.tableLayoutPanel.Controls.Add(this.textAddress, 1, 0);
             this.tableLayoutPanel.Controls.Add(this.labelAddress, 0, 0);
             this.tableLayoutPanel.Controls.Add(this.textNickName, 1, 1);
-            this.tableLayoutPanel.Controls.Add(this.textPort, 3, 0);
             this.tableLayoutPanel.Controls.Add(this.labelPort, 2, 0);
-            this.tableLayoutPanel.Controls.Add(this.buttonConnect, 2, 1);
             this.tableLayoutPanel.Controls.Add(this.buttonSend, 3, 3);
+            this.tableLayoutPanel.Controls.Add(this.textPort, 2, 1);
+            this.tableLayoutPanel.Controls.Add(this.buttonConnect, 3, 0);
+            this.tableLayoutPanel.Controls.Add(this.buttonDisconnect, 3, 1);
             this.tableLayoutPanel.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel.Name = "tableLayoutPanel";
             this.tableLayoutPanel.RowCount = 4;
@@ -71,14 +73,6 @@
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel.Size = new System.Drawing.Size(560, 417);
             this.tableLayoutPanel.TabIndex = 0;
-            // 
-            // textNickName
-            // 
-            this.textNickName.Font = new System.Drawing.Font("굴림", 12F);
-            this.textNickName.Location = new System.Drawing.Point(103, 38);
-            this.textNickName.Name = "textNickName";
-            this.textNickName.Size = new System.Drawing.Size(246, 26);
-            this.textNickName.TabIndex = 11;
             // 
             // labelNickName
             // 
@@ -110,17 +104,6 @@
             this.textSend.TabIndex = 7;
             this.textSend.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textSend_KeyDown);
             // 
-            // buttonSend
-            // 
-            this.buttonSend.Font = new System.Drawing.Font("굴림", 12F);
-            this.buttonSend.Location = new System.Drawing.Point(455, 385);
-            this.buttonSend.Name = "buttonSend";
-            this.buttonSend.Size = new System.Drawing.Size(102, 29);
-            this.buttonSend.TabIndex = 8;
-            this.buttonSend.Text = "보내기";
-            this.buttonSend.UseVisualStyleBackColor = true;
-            this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
-            // 
             // textStatus
             // 
             this.tableLayoutPanel.SetColumnSpan(this.textStatus, 4);
@@ -140,18 +123,6 @@
             this.textAddress.Size = new System.Drawing.Size(246, 26);
             this.textAddress.TabIndex = 3;
             // 
-            // buttonConnect
-            // 
-            this.tableLayoutPanel.SetColumnSpan(this.buttonConnect, 2);
-            this.buttonConnect.Font = new System.Drawing.Font("굴림", 12F);
-            this.buttonConnect.Location = new System.Drawing.Point(355, 38);
-            this.buttonConnect.Name = "buttonConnect";
-            this.buttonConnect.Size = new System.Drawing.Size(202, 29);
-            this.buttonConnect.TabIndex = 0;
-            this.buttonConnect.Text = "연결";
-            this.buttonConnect.UseVisualStyleBackColor = true;
-            this.buttonConnect.Click += new System.EventHandler(this.buttonConnect_Click);
-            // 
             // labelAddress
             // 
             this.labelAddress.Font = new System.Drawing.Font("굴림", 12F);
@@ -161,6 +132,14 @@
             this.labelAddress.TabIndex = 1;
             this.labelAddress.Text = "서버 주소";
             this.labelAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textNickName
+            // 
+            this.textNickName.Font = new System.Drawing.Font("굴림", 12F);
+            this.textNickName.Location = new System.Drawing.Point(103, 38);
+            this.textNickName.Name = "textNickName";
+            this.textNickName.Size = new System.Drawing.Size(246, 26);
+            this.textNickName.TabIndex = 11;
             // 
             // labelPort
             // 
@@ -172,14 +151,47 @@
             this.labelPort.Text = "포트 번호";
             this.labelPort.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // buttonSend
+            // 
+            this.buttonSend.Font = new System.Drawing.Font("굴림", 12F);
+            this.buttonSend.Location = new System.Drawing.Point(455, 385);
+            this.buttonSend.Name = "buttonSend";
+            this.buttonSend.Size = new System.Drawing.Size(102, 29);
+            this.buttonSend.TabIndex = 8;
+            this.buttonSend.Text = "보내기";
+            this.buttonSend.UseVisualStyleBackColor = true;
+            this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
+            // 
             // textPort
             // 
             this.textPort.Font = new System.Drawing.Font("굴림", 12F);
-            this.textPort.Location = new System.Drawing.Point(455, 3);
+            this.textPort.Location = new System.Drawing.Point(355, 38);
             this.textPort.Name = "textPort";
-            this.textPort.Size = new System.Drawing.Size(102, 26);
+            this.textPort.Size = new System.Drawing.Size(94, 26);
             this.textPort.TabIndex = 4;
             this.textPort.Text = "8080";
+            // 
+            // buttonConnect
+            // 
+            this.buttonConnect.Font = new System.Drawing.Font("굴림", 12F);
+            this.buttonConnect.Location = new System.Drawing.Point(455, 3);
+            this.buttonConnect.Name = "buttonConnect";
+            this.buttonConnect.Size = new System.Drawing.Size(102, 29);
+            this.buttonConnect.TabIndex = 0;
+            this.buttonConnect.Text = "연결하기";
+            this.buttonConnect.UseVisualStyleBackColor = true;
+            this.buttonConnect.Click += new System.EventHandler(this.buttonConnect_Click);
+            // 
+            // buttonDisconnect
+            // 
+            this.buttonDisconnect.Font = new System.Drawing.Font("굴림", 12F);
+            this.buttonDisconnect.Location = new System.Drawing.Point(455, 38);
+            this.buttonDisconnect.Name = "buttonDisconnect";
+            this.buttonDisconnect.Size = new System.Drawing.Size(102, 29);
+            this.buttonDisconnect.TabIndex = 0;
+            this.buttonDisconnect.Text = "연결끊기";
+            this.buttonDisconnect.UseVisualStyleBackColor = true;
+            this.buttonDisconnect.Click += new System.EventHandler(this.buttonDisconnect_Click);
             // 
             // ClientForm
             // 
@@ -189,6 +201,7 @@
             this.Controls.Add(this.tableLayoutPanel);
             this.Name = "ClientForm";
             this.Text = "Chatting by inseoul - Client";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ClientForm_FormClosing);
             this.Load += new System.EventHandler(this.ClientForm_Load);
             this.tableLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel.PerformLayout();
@@ -210,6 +223,7 @@
         private System.Windows.Forms.TextBox textStatus;
         private System.Windows.Forms.TextBox textNickName;
         private System.Windows.Forms.Label labelNickName;
+        private System.Windows.Forms.Button buttonDisconnect;
     }
 }
 

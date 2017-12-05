@@ -6,3 +6,11 @@ C:\Users\YURIM_Public_PC\Desktop\Chatting\Server\Server\obj\x86\Debug\Server.csp
 C:\Users\YURIM_Public_PC\Desktop\Chatting\Server\Server\obj\x86\Debug\Server.exe
 C:\Users\YURIM_Public_PC\Desktop\Chatting\Server\Server\obj\x86\Debug\Server.pdb
 C:\Users\YURIM_Public_PC\Desktop\Chatting\Server\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\YURIM_Public_PC\Desktop\CSharpAsyncChatting-master\Server\Server\obj\x86\Debug\Server.exe
+C:\Users\YURIM_Public_PC\Desktop\CSharpAsyncChatting-master\Server\Server\obj\x86\Debug\Server.pdb
+C:\Users\YURIM_Public_PC\Desktop\CSharpAsyncChatting-master\Server\Server\bin\Debug\Server.exe
+C:\Users\YURIM_Public_PC\Desktop\CSharpAsyncChatting-master\Server\Server\bin\Debug\Server.pdb
+C:\Users\YURIM_Public_PC\Desktop\CSharpAsyncChatting-master\Server\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\YURIM_Public_PC\Desktop\CSharpAsyncChatting-master\Server\Server\obj\x86\Debug\Server.Properties.Resources.resources
+C:\Users\YURIM_Public_PC\Desktop\CSharpAsyncChatting-master\Server\Server\obj\x86\Debug\Server.ServerForm.resources
+C:\Users\YURIM_Public_PC\Desktop\CSharpAsyncChatting-master\Server\Server\obj\x86\Debug\Server.csproj.GenerateResource.Cache
